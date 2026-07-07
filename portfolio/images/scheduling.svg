@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <pattern id="stripes-s" width="16" height="16" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <rect width="16" height="16" fill="#141414"/>
+      <rect width="8" height="16" fill="#1e1e1e"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="450" fill="url(#stripes-s)"/>
+
+  <!-- ring of clocks, all showing different, wrong-looking times -->
+  <g font-family="monospace" font-size="13" fill="#ffffff">
+    <g transform="translate(150,110)">
+      <circle r="46" fill="#0d0d0d" stroke="#a78bfa" stroke-width="4"/>
+      <line x1="0" y1="0" x2="0" y2="-28" stroke="#ffffff" stroke-width="4"/>
+      <line x1="0" y1="0" x2="20" y2="10" stroke="#ffffff" stroke-width="4"/>
+      <text y="66" text-anchor="middle">3:47 AM??</text>
+    </g>
+    <g transform="translate(400,80)">
+      <circle r="46" fill="#0d0d0d" stroke="#a78bfa" stroke-width="4"/>
+      <line x1="0" y1="0" x2="10" y2="-30" stroke="#ffffff" stroke-width="4"/>
+      <line x1="0" y1="0" x2="-22" y2="6" stroke="#ffffff" stroke-width="4"/>
+      <text y="66" text-anchor="middle">"lunch time"</text>
+    </g>
+    <g transform="translate(650,110)">
+      <circle r="46" fill="#0d0d0d" stroke="#a78bfa" stroke-width="4"/>
+      <line x1="0" y1="0" x2="-15" y2="-26" stroke="#ffffff" stroke-width="4"/>
+      <line x1="0" y1="0" x2="24" y2="2" stroke="#ffffff" stroke-width="4"/>
+      <text y="66" text-anchor="middle">tuesday?</text>
+    </g>
+  </g>
+
+  <!-- tired little robot in the middle -->
+  <g transform="translate(400,290)" stroke="#ffffff" stroke-width="5" fill="none">
+    <rect x="-40" y="-30" width="80" height="60" rx="10" fill="#0d0d0d"/>
+    <circle cx="-15" cy="-5" r="4" fill="#ffffff"/>
+    <circle cx="15" cy="-5" r="4" fill="#ffffff"/>
+    <path d="M-15 15 Q0 5 15 15"/>
+    <line x1="0" y1="-30" x2="0" y2="-45"/>
+    <circle cx="0" cy="-50" r="5" fill="#ffffff"/>
+    <line x1="-40" y1="0" x2="-60" y2="20"/>
+    <line x1="40" y1="0" x2="60" y2="20"/>
+  </g>
+
+  <text x="400" y="410" text-anchor="middle" font-family="monospace" font-size="20" fill="#ffffff" opacity="0.8">
+    PLACEHOLDER: TIMEZONE HELL, POPULATION: EVERYONE
+  </text>
+  <text x="400" y="30" text-anchor="middle" font-family="monospace" font-size="14" fill="#a78bfa" opacity="0.7">
+    [ art department pending ]
+  </text>
+</svg>

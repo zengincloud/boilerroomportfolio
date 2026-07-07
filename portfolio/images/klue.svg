@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <pattern id="stripes-k" width="16" height="16" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <rect width="16" height="16" fill="#141414"/>
+      <rect width="8" height="16" fill="#1e1e1e"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="450" fill="url(#stripes-k)"/>
+
+  <!-- phone -->
+  <g transform="translate(320,90)">
+    <rect x="0" y="0" width="160" height="280" rx="24" fill="#0d0d0d" stroke="#ffffff" stroke-width="5"/>
+    <circle cx="80" cy="250" r="10" fill="#ffffff" opacity="0.6"/>
+    <text x="80" y="150" text-anchor="middle" font-family="monospace" font-size="46" fill="#ff5d5d">:(</text>
+  </g>
+
+  <!-- ringing lines -->
+  <g stroke="#7dd3fc" stroke-width="5" fill="none" opacity="0.85">
+    <path d="M300 60 Q270 40 280 10"/>
+    <path d="M330 45 Q320 15 340 -5"/>
+    <path d="M500 60 Q530 40 520 10"/>
+    <path d="M470 45 Q480 15 460 -5"/>
+  </g>
+
+  <!-- voicemail box crying, off to the side -->
+  <g transform="translate(560,300)">
+    <rect x="0" y="0" width="140" height="90" rx="10" fill="#0d0d0d" stroke="#ffffff" stroke-width="4"/>
+    <text x="70" y="40" text-anchor="middle" font-family="monospace" font-size="16" fill="#ffffff" opacity="0.8">VOICEMAIL</text>
+    <text x="70" y="68" text-anchor="middle" font-family="monospace" font-size="24" fill="#7dd3fc">*sobbing*</text>
+  </g>
+
+  <text x="400" y="410" text-anchor="middle" font-family="monospace" font-size="20" fill="#ffffff" opacity="0.8">
+    PLACEHOLDER: VOICEMAIL PURGATORY
+  </text>
+  <text x="400" y="30" text-anchor="middle" font-family="monospace" font-size="14" fill="#7dd3fc" opacity="0.7">
+    [ art department pending ]
+  </text>
+</svg>

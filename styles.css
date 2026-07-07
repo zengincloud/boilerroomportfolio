@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* header */
+
+.site-header {
+  padding: 2rem;
+}
+
+.site-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  opacity: 0.9;
+  transition: opacity 0.3s ease-out;
+}
+
+.site-title:hover {
+  opacity: 0.6;
+}
+
+.crumb {
+  padding: 0 2rem;
+  margin-top: -1rem;
+}
+
+.crumb a {
+  font-size: 0.875rem;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-out, letter-spacing 0.3s ease-out;
+}
+
+.crumb a:hover {
+  opacity: 1;
+  letter-spacing: 0.03em;
+}
+
+/* entrance nav (index) */
+
+.entrance-nav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.entrance-link {
+  font-size: 3.75rem;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  transition: letter-spacing 0.5s ease-out, opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+@media (min-width: 768px) {
+  .entrance-link {
+    font-size: 6rem;
+  }
+}
+
+/* group-hover spotlight: hovering one link dims the rest and expands the hovered one */
+.entrance-nav:hover .entrance-link {
+  opacity: 0.25;
+}
+
+.entrance-nav .entrance-link:hover {
+  opacity: 1;
+  letter-spacing: 0.1em;
+  transform: scale(1.04);
+}
+
+/* generic content pages */
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 3rem 2rem 6rem;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .page-title {
+    font-size: 2.75rem;
+  }
+}
+
+.prose {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  opacity: 0.85;
+  max-width: 42rem;
+}
+
+.prose + .prose {
+  margin-top: 1.5rem;
+}
+
+/* home page link group */
+
+.link-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.link-group a {
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  transition: letter-spacing 0.4s ease-out, opacity 0.4s ease-out;
+  width: fit-content;
+}
+
+.link-group:hover a {
+  opacity: 0.3;
+}
+
+.link-group a:hover {
+  opacity: 1;
+  letter-spacing: 0.04em;
+}
+
+/* portfolio index list */
+
+.case-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.case-link {
+  display: block;
+  transition: opacity 0.4s ease-out;
+}
+
+.case-list:hover .case-link {
+  opacity: 0.3;
+}
+
+.case-link:hover {
+  opacity: 1 !important;
+}
+
+.case-title {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  transition: letter-spacing 0.4s ease-out, transform 0.4s ease-out;
+}
+
+@media (min-width: 768px) {
+  .case-title {
+    font-size: 1.875rem;
+  }
+}
+
+.case-link:hover .case-title {
+  letter-spacing: 0.02em;
+  transform: translateX(0.25rem);
+}
+
+.case-meta {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  opacity: 0.5;
+  letter-spacing: 0.02em;
+}
+
+/* case study detail */
+
+.case-study section {
+  margin-bottom: 2.5rem;
+}
+
+.case-study h2 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.5;
+  margin-bottom: 0.75rem;
+}
+
+.case-study p {
+  font-size: 1.125rem;
+  line-height: 1.75;
+  opacity: 0.9;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.tags li {
+  font-size: 0.875rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  padding: 0.3rem 0.9rem;
+  opacity: 0.85;
+}
