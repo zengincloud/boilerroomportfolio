@@ -1,39 +1,44 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
-  <defs>
-    <pattern id="stripes-e" width="16" height="16" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
-      <rect width="16" height="16" fill="#141414"/>
-      <rect width="8" height="16" fill="#1e1e1e"/>
-    </pattern>
-  </defs>
-  <rect width="800" height="450" fill="url(#stripes-e)"/>
+  <rect width="800" height="450" fill="#0d0d0d"/>
 
-  <!-- Apollo, mid-yeet, exiting stage left -->
-  <g transform="translate(150,180) rotate(-25)">
-    <rect x="-60" y="-40" width="120" height="80" rx="10" fill="#0d0d0d" stroke="#ff5d5d" stroke-width="5"/>
-    <text x="0" y="8" text-anchor="middle" font-family="monospace" font-size="20" fill="#ff5d5d">apollo</text>
+  <!-- 4 tiers, small brain to galaxy brain -->
+  <g font-family="'Arial Black', Impact, sans-serif" font-size="22" fill="#ffffff">
+
+    <!-- tier 1 -->
+    <g transform="translate(90,55)">
+      <circle r="16" fill="none" stroke="#888888" stroke-width="4"/>
+      <path d="M-16 0 Q-8 -10 0 0 Q8 -10 16 0" fill="none" stroke="#888888" stroke-width="3"/>
+    </g>
+    <text x="140" y="62">writing a to-do list</text>
+
+    <!-- tier 2 -->
+    <g transform="translate(90,155)">
+      <circle r="24" fill="none" stroke="#7dd3fc" stroke-width="4"/>
+      <path d="M-22 0 Q-11 -14 0 0 Q11 -14 22 0" fill="none" stroke="#7dd3fc" stroke-width="3"/>
+    </g>
+    <text x="140" y="162">using a shared calendar</text>
+
+    <!-- tier 3 -->
+    <g transform="translate(90,265)">
+      <circle r="34" fill="none" stroke="#a78bfa" stroke-width="5"/>
+      <path d="M-30 0 Q-15 -20 0 0 Q15 -20 30 0" fill="none" stroke="#a78bfa" stroke-width="3"/>
+      <line x1="-45" y1="-10" x2="-55" y2="-20" stroke="#a78bfa" stroke-width="3"/>
+      <line x1="45" y1="-10" x2="55" y2="-20" stroke="#a78bfa" stroke-width="3"/>
+    </g>
+    <text x="140" y="272">17 browser tabs and vibes</text>
+
+    <!-- tier 4: galaxy brain -->
+    <g transform="translate(90,385)">
+      <circle r="46" fill="none" stroke="#ffd23f" stroke-width="6"/>
+      <path d="M-40 0 Q-20 -26 0 0 Q20 -26 40 0" fill="none" stroke="#ffd23f" stroke-width="4"/>
+      <line x1="-60" y1="0" x2="-80" y2="0" stroke="#ffd23f" stroke-width="3"/>
+      <line x1="60" y1="0" x2="80" y2="0" stroke="#ffd23f" stroke-width="3"/>
+      <line x1="-50" y1="-35" x2="-65" y2="-55" stroke="#ffd23f" stroke-width="3"/>
+      <line x1="50" y1="-35" x2="65" y2="-55" stroke="#ffd23f" stroke-width="3"/>
+      <line x1="0" y1="-50" x2="0" y2="-75" stroke="#ffd23f" stroke-width="3"/>
+    </g>
+    <text x="140" y="392" fill="#ffd23f">just asking an AI to do it</text>
   </g>
-  <g stroke="#ff5d5d" stroke-width="5">
-    <line x1="230" y1="130" x2="290" y2="100"/>
-    <line x1="230" y1="150" x2="300" y2="150"/>
-    <line x1="230" y1="170" x2="290" y2="200"/>
-  </g>
-  <text x="260" y="90" font-family="monospace" font-size="24" fill="#ff5d5d">yeet!</text>
 
-  <!-- Clay crate, walking in confidently -->
-  <g transform="translate(560,200)">
-    <rect x="-70" y="-50" width="140" height="100" rx="8" fill="#0d0d0d" stroke="#7dffb2" stroke-width="5"/>
-    <line x1="-70" y1="-50" x2="70" y2="50" stroke="#7dffb2" stroke-width="3" opacity="0.4"/>
-    <line x1="70" y1="-50" x2="-70" y2="50" stroke="#7dffb2" stroke-width="3" opacity="0.4"/>
-    <text x="0" y="8" text-anchor="middle" font-family="monospace" font-size="26" fill="#7dffb2">clay</text>
-  </g>
-
-  <!-- a stray "300%" balloon because why not -->
-  <text x="620" y="330" font-family="monospace" font-size="20" fill="#7dffb2" opacity="0.8">+300% meetings</text>
-
-  <text x="400" y="410" text-anchor="middle" font-family="monospace" font-size="20" fill="#ffffff" opacity="0.8">
-    PLACEHOLDER: APOLLO EXITS STAGE LEFT
-  </text>
-  <text x="400" y="30" text-anchor="middle" font-family="monospace" font-size="14" fill="#7dffb2" opacity="0.7">
-    [ art department pending ]
-  </text>
+  <text x="400" y="430" text-anchor="middle" font-family="monospace" font-size="14" fill="#ffd23f" opacity="0.7">[ placeholder image — completely unrelated, sorry ]</text>
 </svg>

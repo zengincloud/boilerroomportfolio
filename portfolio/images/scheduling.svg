@@ -1,50 +1,43 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
-  <defs>
-    <pattern id="stripes-s" width="16" height="16" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
-      <rect width="16" height="16" fill="#141414"/>
-      <rect width="8" height="16" fill="#1e1e1e"/>
-    </pattern>
-  </defs>
-  <rect width="800" height="450" fill="url(#stripes-s)"/>
+  <rect width="800" height="450" fill="#241010"/>
 
-  <!-- ring of clocks, all showing different, wrong-looking times -->
-  <g font-family="monospace" font-size="13" fill="#ffffff">
-    <g transform="translate(150,110)">
-      <circle r="46" fill="#0d0d0d" stroke="#a78bfa" stroke-width="4"/>
-      <line x1="0" y1="0" x2="0" y2="-28" stroke="#ffffff" stroke-width="4"/>
-      <line x1="0" y1="0" x2="20" y2="10" stroke="#ffffff" stroke-width="4"/>
-      <text y="66" text-anchor="middle">3:47 AM??</text>
-    </g>
-    <g transform="translate(400,80)">
-      <circle r="46" fill="#0d0d0d" stroke="#a78bfa" stroke-width="4"/>
-      <line x1="0" y1="0" x2="10" y2="-30" stroke="#ffffff" stroke-width="4"/>
-      <line x1="0" y1="0" x2="-22" y2="6" stroke="#ffffff" stroke-width="4"/>
-      <text y="66" text-anchor="middle">"lunch time"</text>
-    </g>
-    <g transform="translate(650,110)">
-      <circle r="46" fill="#0d0d0d" stroke="#a78bfa" stroke-width="4"/>
-      <line x1="0" y1="0" x2="-15" y2="-26" stroke="#ffffff" stroke-width="4"/>
-      <line x1="0" y1="0" x2="24" y2="2" stroke="#ffffff" stroke-width="4"/>
-      <text y="66" text-anchor="middle">tuesday?</text>
-    </g>
+  <!-- flames -->
+  <g fill="#ff6a2a">
+    <polygon points="40,450 90,300 140,450"/>
+    <polygon points="120,450 170,260 220,450"/>
+    <polygon points="580,450 630,260 680,450"/>
+    <polygon points="660,450 710,300 760,450"/>
+  </g>
+  <g fill="#ffb02a">
+    <polygon points="60,450 90,340 120,450"/>
+    <polygon points="600,450 630,340 660,450"/>
   </g>
 
-  <!-- tired little robot in the middle -->
-  <g transform="translate(400,290)" stroke="#ffffff" stroke-width="5" fill="none">
-    <rect x="-40" y="-30" width="80" height="60" rx="10" fill="#0d0d0d"/>
-    <circle cx="-15" cy="-5" r="4" fill="#ffffff"/>
-    <circle cx="15" cy="-5" r="4" fill="#ffffff"/>
-    <path d="M-15 15 Q0 5 15 15"/>
-    <line x1="0" y1="-30" x2="0" y2="-45"/>
-    <circle cx="0" cy="-50" r="5" fill="#ffffff"/>
-    <line x1="-40" y1="0" x2="-60" y2="20"/>
-    <line x1="40" y1="0" x2="60" y2="20"/>
+  <!-- table -->
+  <rect x="260" y="330" width="280" height="16" fill="#3a2a1a"/>
+  <rect x="280" y="346" width="16" height="60" fill="#3a2a1a"/>
+  <rect x="500" y="346" width="16" height="60" fill="#3a2a1a"/>
+
+  <!-- dog -->
+  <g transform="translate(400,270)">
+    <circle r="55" fill="#d8a35c"/>
+    <polygon points="-45,-40 -20,-70 -5,-30" fill="#d8a35c"/>
+    <polygon points="45,-40 20,-70 5,-30" fill="#c98f43"/>
+    <rect x="-30" y="-72" width="60" height="14" rx="4" fill="#2a2a2a"/>
+    <rect x="-36" y="-64" width="72" height="8" fill="#2a2a2a"/>
+    <circle cx="-18" cy="-5" r="4" fill="#000"/>
+    <circle cx="18" cy="-5" r="4" fill="#000"/>
+    <path d="M-20 15 Q0 25 20 15" stroke="#000" stroke-width="3" fill="none"/>
+  </g>
+  <!-- mug -->
+  <rect x="410" y="320" width="30" height="26" rx="3" fill="#ffffff" opacity="0.9"/>
+
+  <!-- speech bubble -->
+  <g>
+    <rect x="470" y="180" width="220" height="70" rx="14" fill="#ffffff"/>
+    <polygon points="480,248 460,275 500,250" fill="#ffffff"/>
+    <text x="580" y="222" text-anchor="middle" font-family="'Arial Black', Impact, sans-serif" font-size="26" fill="#000000">this is fine</text>
   </g>
 
-  <text x="400" y="410" text-anchor="middle" font-family="monospace" font-size="20" fill="#ffffff" opacity="0.8">
-    PLACEHOLDER: TIMEZONE HELL, POPULATION: EVERYONE
-  </text>
-  <text x="400" y="30" text-anchor="middle" font-family="monospace" font-size="14" fill="#a78bfa" opacity="0.7">
-    [ art department pending ]
-  </text>
+  <text x="400" y="30" text-anchor="middle" font-family="monospace" font-size="14" fill="#ff6a2a" opacity="0.8">[ placeholder image — completely unrelated, sorry ]</text>
 </svg>

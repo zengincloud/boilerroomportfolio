@@ -163,7 +163,9 @@ main {
 }
 
 .case-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
   transition: opacity 0.4s ease-out;
 }
 
@@ -173,6 +175,26 @@ main {
 
 .case-link:hover {
   opacity: 1 !important;
+}
+
+.case-thumb {
+  flex: 0 0 auto;
+  width: 96px;
+  height: 72px;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+}
+
+@media (min-width: 768px) {
+  .case-thumb {
+    width: 140px;
+    height: 96px;
+  }
+}
+
+.case-text {
+  min-width: 0;
 }
 
 .case-title {
@@ -236,4 +258,20 @@ main {
   border-radius: 999px;
   padding: 0.3rem 0.9rem;
   opacity: 0.85;
+}
+
+.case-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+
+.img-caption {
+  font-size: 0.8rem;
+  opacity: 0.4;
+  font-style: italic;
+  margin-bottom: 2.5rem;
 }
