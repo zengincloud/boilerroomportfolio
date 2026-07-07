@@ -65,7 +65,7 @@ a {
   font-size: 3.75rem;
   font-weight: 500;
   letter-spacing: -0.025em;
-  transition: letter-spacing 0.5s ease-out, opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition: letter-spacing 0.5s ease-out, opacity 0.5s ease-out;
 }
 
 @media (min-width: 768px) {
@@ -121,7 +121,7 @@ main {
   font-size: 1.25rem;
   font-weight: 500;
   letter-spacing: -0.01em;
-  transition: letter-spacing 0.4s ease-out, opacity 0.4s ease-out;
+  transition: opacity 0.4s ease-out;
   width: fit-content;
 }
 
@@ -137,7 +137,6 @@ main {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  transition: opacity 0.4s ease-out;
 }
 
 .case-thumb {
@@ -165,7 +164,7 @@ main {
   font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: -0.01em;
-  transition: letter-spacing 0.4s ease-out, transform 0.4s ease-out;
+  transition: opacity 0.4s ease-out;
 }
 
 @media (min-width: 768px) {
@@ -234,8 +233,9 @@ main {
   margin-bottom: 2.5rem;
 }
 
-/* hover-only spotlight effects — skipped on touch devices, where a stuck
-   :hover from scrolling would dim a whole group with nothing to un-dim it */
+/* hover-only effects — skipped on touch devices, where a stuck :hover from
+   scrolling would leave things dimmed with nothing to reset them. Each item
+   is white by default and only greys itself out on hover, nothing else. */
 @media (hover: hover) and (pointer: fine) {
   .site-title:hover {
     opacity: 0.6;
@@ -246,35 +246,16 @@ main {
     letter-spacing: 0.03em;
   }
 
-  .entrance-nav:hover .entrance-link {
-    opacity: 0.25;
-  }
-
-  .entrance-nav .entrance-link:hover {
-    opacity: 1;
-    letter-spacing: 0.1em;
-    transform: scale(1.04);
-  }
-
-  .link-group:hover a {
-    opacity: 0.3;
+  .entrance-link:hover {
+    opacity: 0.6;
+    letter-spacing: 0.08em;
   }
 
   .link-group a:hover {
-    opacity: 1;
-    letter-spacing: 0.04em;
-  }
-
-  .case-list:hover .case-link {
-    opacity: 0.3;
-  }
-
-  .case-link:hover {
-    opacity: 1 !important;
+    opacity: 0.6;
   }
 
   .case-link:hover .case-title {
-    letter-spacing: 0.02em;
-    transform: translateX(0.25rem);
+    opacity: 0.6;
   }
 }
